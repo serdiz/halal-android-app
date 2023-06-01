@@ -1,0 +1,303 @@
+{
+  "project_info": {
+    "project_number": "837696801636",
+    "firebase_url": "https://dr-halal-default-rtdb.firebaseio.com",
+    "project_id": "dr-halal",
+    "storage_bucket": "dr-halal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:bb9935bb35250428810871",
+        "android_client_info": {
+          "package_name": "com.drhalal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-906hs3h2n5nsmq9ulci6p9baqnke9hd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drhalal",
+            "certificate_hash": "96c0b2698b8b6ff309d95ddc9825b99d9b32fe4c"
+          }
+        },
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:1d9b84ae2c6d30e6810871",
+        "android_client_info": {
+          "package_name": "com.example.dr_halal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-ul6mr1p251c958gnvqv12sg8vgbas81f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dr_halal",
+            "certificate_hash": "0bc98ecd0df798fc843eb9dfbc35a56880f105f4"
+          }
+        },
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:e8c0c6697426194c810871",
+        "android_client_info": {
+          "package_name": "com.example.drhalal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-mar0fhr3ffe7edeb6bc2526g61ekdo4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drhalal",
+            "certificate_hash": "f8bc924ec6c326a36b80ac01b7059f4c092e3108"
+          }
+        },
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:ef82f3013ca321b6810871",
+        "android_client_info": {
+          "package_name": "com.example.halal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:6ec45f8dccd3c333810871",
+        "android_client_info": {
+          "package_name": "com.example.searchbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:332621c256361a48810871",
+        "android_client_info": {
+          "package_name": "com.example.yes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-99mbqde1c1u5n8pv4vchumdsgao22d06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yes",
+            "certificate_hash": "f8bc924ec6c326a36b80ac01b7059f4c092e3108"
+          }
+        },
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837696801636:android:286c0c3a6db3f059810871",
+        "android_client_info": {
+          "package_name": "ro.serdiz.se"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837696801636-icd8tip9faqdq43almrskc111h4nbld7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ro.serdiz.se",
+            "certificate_hash": "f8bc924ec6c326a36b80ac01b7059f4c092e3108"
+          }
+        },
+        {
+          "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKlNoj64ibsh-Eh0f9ZBp0ZUYV-6tXcYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "837696801636-e3ckdensiakt685l7kmr16c3s5a4cqfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "M0nero.halal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

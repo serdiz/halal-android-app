@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">roserdizse</string>
+    <string name="web_client_id" translatable="false">837696801636-mlt7pso5210nlmmfmm67rk0nhs0h6nkd.apps.googleusercontent.com</string>
+
+    //Menu Items
+    <string name="revoke_access_item">Revoke Access</string>
+    <string name="sign_out_item">Sign-out</string>
+</resources>
