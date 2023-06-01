@@ -7,16 +7,22 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import ro.serdiz.se.core.Constants.PRODUCT_DETAILS_SCREEN
 
 @Composable
 fun ProductDetailsTopBar(
     navigateBack: () -> Unit
+
 ) {
+    val Green = Color(0xFF17C734)
+
     TopAppBar(
         title = {
             Text(
-                text = PRODUCT_DETAILS_SCREEN
+                text = PRODUCT_DETAILS_SCREEN,
+                color = Color.White
+
             )
         },
         navigationIcon = {
@@ -28,6 +34,7 @@ fun ProductDetailsTopBar(
                     contentDescription = null
                 )
             }
-        }
+        },
+        backgroundColor = Green
     )
 }

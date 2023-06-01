@@ -19,6 +19,7 @@ import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
 import ro.serdiz.se.core.Constants.CATEGORY_ID
 import ro.serdiz.se.core.Constants.NO_PRODUCT_NAME
+import ro.serdiz.se.core.Constants.PRODUCT_ID
 import ro.serdiz.se.core.Constants.PRODUCT_NAME
 import ro.serdiz.se.navigation.Direction
 import ro.serdiz.se.navigation.Screenl.*
@@ -53,29 +54,7 @@ fun NavGraph(     navController: NavHostController
 
     val categoryViewModel = viewModel(modelClass = CategoryListView::class.java)
     val categoriesState by categoryViewModel.categories.collectAsState()
-//
-//
-//    val executor = Executors.newSingleThreadExecutor()
-//
-//    val handler = Handler(Looper.getMainLooper())
-//
-//    var image: Bitmap? = null
-//
-//    executor.execute{
-//        val imageURL = "https://drhalal-with-s3-demo.s3.amazonaws.com/ozera.jpg"
-//
-//        try{
-//            val `in` = java.net.URL(imageURL).openStream()
-//
-//            image = BitmapFactory.decodeStream(`in`)
-//
-//            handler.post(
-//
-//            )
-//        } catch (e: java.lang.Exception){
-//            e.printStackTrace()
-//        }
-//    }
+
 
     AnimatedNavHost(
         navController = navController,
@@ -134,20 +113,20 @@ fun NavGraph(     navController: NavHostController
             )
         }
         composable(
-            route = "${ProductDetailsScreen.route}/{$PRODUCT_NAME}",
+            route = "${ProductDetailsScreen.route}/{$PRODUCT_ID}",
             arguments = listOf(
-                navArgument(PRODUCT_NAME) {
+                navArgument(PRODUCT_ID) {
                     type = NavType.StringType
                 }
             )
         ) { backStackEntry ->
-            val productName = backStackEntry.arguments?.getString(PRODUCT_NAME) ?: NO_PRODUCT_NAME
+            val productId = backStackEntry.arguments?.getString(PRODUCT_ID) ?: NO_PRODUCT_NAME
+            val product = productsState.filter { product -> product.id == productId.toLong() }[0]
             ProductDetailsScreen(
                 navigateBack = {
                     direction.navigateBack()
                 },
-                productName = productName,
-                productDes = ""
+                product = product,
             )
         }
         composable(
@@ -160,7 +139,7 @@ fun NavGraph(     navController: NavHostController
         ) { backStackEntry ->
             val categoryId = backStackEntry.arguments?.getString(CATEGORY_ID) ?: NO_PRODUCT_NAME
             val filteredProducts = productsState.filter { product ->
-                product.subcategory_id?.startsWith(categoryId, ignoreCase = true) == true
+                product.subcategory_id.toString().startsWith(categoryId, ignoreCase = true) == true
             }
             CategoryProductsScreen(
                 navigateBack = {

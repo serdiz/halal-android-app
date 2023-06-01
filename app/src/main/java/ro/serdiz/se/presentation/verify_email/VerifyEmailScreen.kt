@@ -29,17 +29,6 @@ fun VerifyEmailScreen(
 
     Scaffold(
         topBar = {
-//            TopBar(
-//                title = VERIFY_EMAIL_SCREEN,
-//                signOut = {
-//                    viewModel.signOut()
-//                },
-//                revokeAccess = {
-//                    viewModel.revokeAccessl()
-//
-//                },
-//                photo = "https://example.com/profile-photo.jpg"
-//            )
         },
         content = { padding ->
             VerifyEmailContent(

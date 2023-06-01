@@ -57,25 +57,30 @@ fun HomeScreen(
 
         bottomBar = {
             BottomAppBar(
-                backgroundColor = Green
-
-            ) {
-                NavigationIcon(
-                    icon = R.drawable.img_6, // Add the icon resource for the new icon
-                    text = "Search", // Add the desired text for the new icon
-                    onClick = navigateToProductSearchScreen // Add the navigation action for the new icon
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user, // Replace with the desired icon resource for the profile
-                    text = "Profile", // Replace with the desired text for the profile icon
-                    onClick = navigateToProfileScreen // Add the navigation action for the profile icon
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user, // Add the icon resource for the new icon
-                    text = "Home", // Add the desired text for the new icon
-                    onClick = {}
-                )
-            }
+                backgroundColor = Green,
+                content = {
+                    Row(
+                        modifier = Modifier.padding(start = 45.dp),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        NavigationIcon(
+                            icon = R.drawable.img_14,
+                            text = "Поиск",
+                            onClick = navigateToProductSearchScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Профиль",
+                            onClick = navigateToProfileScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Home",
+                            onClick = {}                        )
+                    }
+                }
+            )
         },
         content = { padding ->
 
@@ -96,8 +101,9 @@ fun HomeScreen(
                     style = MaterialTheme.typography.h6.copy(Color.Black),
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(16.dp)
+                        .padding(2.dp)
                 )
+
                 Box(
                     modifier = Modifier
                         .height(180.dp)
@@ -153,6 +159,13 @@ fun HomeScreen(
                         }
                     }
                 }
+                Text(
+                    text = "Категории",
+                    style = MaterialTheme.typography.h6.copy(Color.Black),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                )
                 LazyColumn(
                     modifier = Modifier
                         .fillMaxSize()
@@ -173,30 +186,10 @@ fun HomeScreen(
 
         }
     )
-
         }
 
 
-//        BottomAppBar(
-//            backgroundColor = Green
-//
-//        ) {
-//            NavigationIcon(
-//                icon = R.drawable.img_6, // Add the icon resource for the new icon
-//                text = "Search", // Add the desired text for the new icon
-//                onClick = navigateToProductSearchScreen // Add the navigation action for the new icon
-//            )
-//            NavigationIcon(
-//                icon = R.drawable.ic_user, // Replace with the desired icon resource for the profile
-//                text = "Profile", // Replace with the desired text for the profile icon
-//                onClick = navigateToProfileScreen // Add the navigation action for the profile icon
-//            )
-//            NavigationIcon(
-//                icon = R.drawable.ic_user, // Add the icon resource for the new icon
-//                text = "Home", // Add the desired text for the new icon
-//                onClick = {}
-//            )
-//        }
+
 
 
 

@@ -7,7 +7,7 @@ import javax.inject.Inject
 class getCategoryUseCase @Inject constructor(private val productRepo: ProductRepo) {
 
     suspend operator fun invoke(): List<Category> {
-        return productRepo.getCategories().shuffled()
+        return productRepo.getCategories()
     }
 
 }

@@ -7,13 +7,17 @@ object Constants {
     //Firestore
     const val PRODUCT = "product"
     const val PRODUCT_NAME = "product_name"
+    const val PRODUCT_ID = "id"
+    const val PRODUCT_DES = "product_description"
+
+
     const val CATEGORY_ID = "id"
     const val CATEGORY = "category"
 
     //Screens
     const val PRODUCT_LIST_SCREEN = "Product List"
     const val PRODUCT_SEARCH_SCREEN = "Product Search"
-    const val PRODUCT_DETAILS_SCREEN = "Product Details"
+    const val PRODUCT_DETAILS_SCREEN = "Назад"
     const val CATEGORY_PRODUCTS_SCREEN = "Category Products"
 //    const val PRODUCT_DETAILS_SCREEN1 = "Product Details1"
 
@@ -74,7 +78,7 @@ object Constants {
 
     //Screens
     const val SIGN_IN_SCREEN = "Sign in"
-    const val FORGOT_PASSWORD_SCREEN = "Forgot password"
+    const val FORGOT_PASSWORD_SCREEN = "Изменить пароль"
     const val SIGN_UP_SCREEN = "Sign up"
     const val VERIFY_EMAIL_SCREEN = "Verify email"
     const val PROFILE_SCREEN = "Profile"
@@ -108,10 +112,10 @@ object Constants {
     const val SENSITIVE_OPERATION_MESSAGE = "This operation is sensitive and requires recent authentication. Log in again before retrying this request."
 
     // API
-    const val BASE_URL = "http://192.168.1.71:8000/"
+//    const val BASE_URL = "https://halal-api.onrender.com/"
     const val PRODUCTS_ENDPOINT = "products"
     const val CATEGORIES_ENDPOINT = "categories"
 
-
+    const val BASE_URL = "http://192.168.1.71:8000/"
 }
 

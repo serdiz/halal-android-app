@@ -1,8 +1,7 @@
 package ro.serdiz.se.presentation.product_search
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.BottomAppBar
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
@@ -14,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import ro.serdiz.se.R
@@ -66,24 +66,33 @@ fun ProductSearchScreen(
             )
         },
         bottomBar = {
-            BottomAppBar( backgroundColor = Green
-            ) {
-                NavigationIcon(
-                    icon = R.drawable.img_6,
-                    text = "Search",
-                    onClick = navigateToProductSearchScreen
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user,
-                    text = "Profile",
-                    onClick = navigateToProfileScreen
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user,
-                    text = "Home",
-                    onClick = navigateToHomeScreen
-                )
-            }
+            BottomAppBar(
+                backgroundColor = Green,
+                content = {
+                    Row(
+                        modifier = Modifier.padding(start = 45.dp),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        NavigationIcon(
+                            icon = R.drawable.img_14,
+                            text = "Поиск",
+                            onClick = navigateToProductSearchScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Профиль",
+                            onClick = navigateToProfileScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Home",
+                            onClick = navigateToHomeScreen
+                        )
+                    }
+                }
+            )
+
         },
         content = { padding ->
             val searchText = search.text
@@ -99,7 +108,6 @@ fun ProductSearchScreen(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-//                .background(Green)
             ) {
                 when (val productListResponse = viewModel.productListResponse) {
                     is Loading -> ProgressBar()

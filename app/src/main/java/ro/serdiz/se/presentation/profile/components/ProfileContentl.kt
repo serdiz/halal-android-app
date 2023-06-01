@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ro.serdiz.se.R
@@ -33,50 +34,58 @@ fun ProfileContentl(
     Scaffold(
 
         bottomBar = {
-            BottomAppBar(backgroundColor = Green
-
-            ) {
-                NavigationIcon(
-                    icon = R.drawable.img_6,
-                    text = "Search",
-                    onClick = navigateToProductSearchScreen
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user,
-                    text = "Profile",
-                    onClick = navigateToProfileScreen
-                )
-                NavigationIcon(
-                    icon = R.drawable.ic_user,
-                    text = "Home",
-                    onClick = navigateToHomeScreen
-                )
-            }
+            BottomAppBar(
+                backgroundColor = Green,
+                content = {
+                    Row(
+                        modifier = Modifier.padding(start = 45.dp),
+                        horizontalArrangement = Arrangement.Center,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        NavigationIcon(
+                            icon = R.drawable.img_14,
+                            text = "Поиск",
+                            onClick = navigateToProductSearchScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Профиль",
+                            onClick = navigateToProfileScreen
+                        )
+                        NavigationIcon(
+                            icon = R.drawable.ic_user,
+                            text = "Home",
+                            onClick = navigateToHomeScreen
+                        )
+                    }
+                }
+            )
         },
 
     content = { padding ->
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 16.dp),
+                .padding(horizontal = 1.dp, vertical = 16.dp),
             verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.Start,
         ) {
 
 
             Column(
                 modifier = Modifier.fillMaxWidth(),
                 verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.Start
             ) {
                 Box(
                     modifier = Modifier.fillMaxWidth(),
                     contentAlignment = Alignment.Center
                 ) {
                     Row(
-                        verticalAlignment = Alignment.CenterVertically
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Start
                     ) {
-                        Spacer(modifier = Modifier.weight(1f))
+//                        Spacer(modifier = Modifier.weight(1f))
                         Image(
                             painter = painterResource(id = R.drawable.img_1),
                             contentDescription = null,
@@ -84,13 +93,14 @@ fun ProfileContentl(
                                 .size(60.dp)
                                 .padding(bottom = 4.dp)
                                 .padding(vertical = 12.dp)
-                                .padding(start = 10.dp)
+                                .padding(start = 1.dp)
                         )
 
                         Text(
                             modifier = Modifier.clickable { navigateToForgotPasswordScreen() },
                             text = "Изменить пароль",
-                            fontSize = 18.sp
+                            fontSize = 18.sp,
+                            textAlign = TextAlign.Start
                         )
                         Spacer(modifier = Modifier.weight(1f))
                     }
@@ -101,7 +111,7 @@ fun ProfileContentl(
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                    horizontalArrangement = Arrangement.Start
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.img_2),
@@ -122,7 +132,7 @@ fun ProfileContentl(
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                    horizontalArrangement = Arrangement.Start
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.img_3),
@@ -143,7 +153,7 @@ fun ProfileContentl(
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                    horizontalArrangement = Arrangement.Start
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.img_5),
@@ -164,7 +174,7 @@ fun ProfileContentl(
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.Center
+                    horizontalArrangement = Arrangement.Start
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.img_4),

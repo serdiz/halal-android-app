@@ -40,38 +40,36 @@ fun CategoryCard(
         elevation = 3.dp,
         onClick = onClick
     ) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(
-                    all = 12.dp
-                )
-        ) {
-            category.name?.let { categoryName -> //name
-                Text(
-                    text = categoryName,
-                    color = DarkGray,
-                    fontSize = 25.sp
-                )
+        Row() {
+            Image(
+                painter = rememberImagePainter(
+                    data = category.img_url,
+                    builder = {
+                        // Optional: Add any additional configuration for image loading
+                    }
+                ),
+                contentDescription = "Category Image",
+                modifier = Modifier
+                    .size(80.dp),
+            )
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(
+                        all = 12.dp
+                    )
+            ) {
+                category.name?.let { categoryName ->
+                    Text(
+                        text = categoryName,
+                        color = DarkGray,
+                        fontSize = 25.sp
+                    )
+                }
             }
+
+
         }
-//        Box(
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(
-//                    all = 12.dp
-//                )
-//        ) {
-//            category.product_description?.let { imageUrl ->
-//                CoilImage(
-//                    data = imageUrl,
-//                    contentDescription = product.product_img ?: "",
-//                    modifier = Modifier.size(100 .dp),
-//                    contentScale = ContentScale.Crop
-//                )
-//            }
-//
-//        }
     }
 }
 

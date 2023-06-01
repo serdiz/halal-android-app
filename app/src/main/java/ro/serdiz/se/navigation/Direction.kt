@@ -23,7 +23,7 @@ class Direction(
     }
 
     val navigateToProductDetailsScreen: (ProductItem) -> Unit = { product ->
-        navController.navigate("${ProductDetailsScreen.route}/${product.product_name}"
+        navController.navigate("${ProductDetailsScreen.route}/${product.id}"
         )
     }
 
